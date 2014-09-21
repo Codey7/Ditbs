@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dce6e8"
+    android:paddingTop="5dp"
+    tools:context="com.tes.tview.MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="28dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dip"
+        android:background="@layout/shape"
+        android:drawableLeft="@drawable/sb"
+        android:ems="10"
+        android:hint="请输入文字"
+        android:textColor="#66000000"
+        android:textSize="12px" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+      android:layout_marginLeft="0dip"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:layout_weight="0.70"
+            android:background="@layout/button_stytle"
+            android:gravity="fill"
+            android:text="@string/action_button" />
+
+      <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:layout_margin="0dip"
+            android:text="Button" 
+         android:gravity="fill"
+       
+            />
+
+   <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:layout_margin="0dip"
+            android:text="Button" 
+           android:gravity="fill"
+            />
+      <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:layout_margin="0dip"
+            android:text="Button" 
+         android:gravity="fill"
+            />
+   
+
+    </LinearLayout>
+   
+    <ListView 
+        android:layout_below="@+id/linearLayout1"
+        android:layout_width="wrap_content"   
+          android:layout_height="wrap_content"   
+          android:id="@+id/ListView01" 
+          android:background="#60000000" />
+
+</RelativeLayout>
